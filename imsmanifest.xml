@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<manifest identifier="ims_coursework" version="1.0" 
+<manifest identifier="ims_hello" version="1.0" 
 	xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" 
 	xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" 
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -7,67 +7,20 @@
         <schema>ADL SCORM</schema>
         <schemaversion>CAM 1.3</schemaversion>
     </metadata>
-    <organizations default="crs_js_frameworks">
-        <organization identifier="crs_js_frameworks">
-           <title>Сравнительный анализ JavaScript фреймворков для мобильных приложений</title>
-              <item identifier="sco_overview" 
-			      identifierref="sco_overview_ref">
-              <title>Введение в курс</title>
-           </item>
-           <item identifier="sco_react_native" 
-			      identifierref="sco_react_native_ref">
-              <title>React Native</title>
-           </item>
-           <item identifier="sco_nativescript" 
-			      identifierref="sco_nativescript_ref">
-              <title>NativeScript</title>
-           </item>
-           <item identifier="sco_ionic" 
-			      identifierref="sco_ionic_ref">
-              <title>Ionic</title>
-           </item>
-           <item identifier="sco_comparison" 
-			      identifierref="sco_comparison_ref">
-              <title>Сравнение фреймворков</title>
-           </item>
-           <item identifier="sco_conclusion" 
-			      identifierref="sco_conclusion_ref">
-              <title>Заключение и выводы</title>
-           </item>
-           <item identifier="sco_test" 
-			      identifierref="sco_test_ref">
-              <title>Тест по курсу</title>
+    <organizations default="crs_hello">
+        <organization identifier="crs_hello">
+           <title>JS modile app dev SCORM</title>
+              <item identifier="sco_hello" 
+			      identifierref="sco_hello_ref">
+              <title>JS modile app dev SCORM</title>
            </item>
         </organization>
     </organizations>
     <resources>
-        <resource identifier="sco_overview_ref" 
+        <resource identifier="sco_hello_ref" 
             type="webcontent" 
-            href="overview.html" 
-            adlcp:scormtype="sco"/>
-        <resource identifier="sco_react_native_ref" 
-            type="webcontent" 
-            href="react_native.html" 
-            adlcp:scormtype="sco"/>
-        <resource identifier="sco_nativescript_ref" 
-            type="webcontent" 
-            href="nativescript.html" 
-            adlcp:scormtype="sco"/>
-        <resource identifier="sco_ionic_ref" 
-            type="webcontent" 
-            href="ionic.html" 
-            adlcp:scormtype="sco"/>
-        <resource identifier="sco_comparison_ref" 
-            type="webcontent" 
-            href="comparison.html" 
-            adlcp:scormtype="sco"/>
-        <resource identifier="sco_conclusion_ref" 
-            type="webcontent" 
-            href="conclusion.html" 
-            adlcp:scormtype="sco"/>
-        <resource identifier="sco_test_ref" 
-            type="webcontent" 
-            href="test.html" 
-            adlcp:scormtype="sco"/>
+            href="index.html" 
+            adlcp:scormtype="sco">
+        </resource>
     </resources>
 </manifest>

@@ -28,28 +28,28 @@ export function TheoryWidget(props) {
                 header="NativeScript: Гибкость Angular и Vue.js"
                 body="NativeScript предоставляет возможность использования Angular или Vue.js для создания нативных приложений. Он подходит для проектов, где важна гибкость и возможность интеграции с существующими библиотеками Angular или Vue.js. NativeScript идеален для разработки сложных бизнес-приложений с обширным функционалом."
                 done={() => {
-                    props.setScore(doneTheory("4"));
+                    props.setScore(doneTheory("3"));
                     setOpenedPage(`/ionic`);
                 }}/>,
             "/ionic": <TextWrapper
                 header="Ionic: Универсальность веб-технологий"
                 body="Ionic использует веб-технологии (HTML, CSS, JavaScript) в сочетании с Angular для создания гибридных приложений. Это отличный выбор для проектов, где необходимо быстро создать кросс-платформенное приложение с использованием веб-технологий и готовых компонентов интерфейса."
                 done={() => {
-                    props.setScore(doneTheory("8"));
+                    props.setScore(doneTheory("4"));
                     setOpenedPage(`/comparison`);
                 }}/>,
             "/comparison": <TextWrapper
                 header="Сравнительный анализ: React Native, NativeScript, Ionic"
                 body="React Native предлагает нативную производительность и глубокую интеграцию с платформой. NativeScript выделяется гибкостью и поддержкой Angular/Vue.js. Ionic идеален для быстрой разработки и использования веб-технологий. Выбор зависит от целей проекта: для сложных интерфейсов и производительности лучше React Native, для гибкости и интеграции с Angular/Vue.js - NativeScript, для веб-разработчиков и быстрого прототипирования - Ionic."
                 done={() => {
-                    props.setScore(doneTheory("16"));
+                    props.setScore(doneTheory("5"));
                     setOpenedPage(`/conclusion`);
                 }}/>,
             "/conclusion": <TextWrapper
                 header="Заключение: Выбор подходящего фреймворка"
                 body="Выбор фреймворка для мобильной разработки зависит от множества факторов: требуемой производительности, предпочтений в разработке, сроков проекта и доступных ресурсов. React Native, NativeScript и Ionic предлагают разные подходы и инструменты, каждый со своими сильными сторонами и ограничениями. Важно оценить требования вашего проекта и выбрать наиболее подходящий инструмент."
                 done={() => {
-                    props.setScore(doneTheory("32"));
+                    props.setScore(doneTheory("6"));
                     setShowTest(true); // Обновляем состояние для отображения TestWidget
                 }}/>,
         });
