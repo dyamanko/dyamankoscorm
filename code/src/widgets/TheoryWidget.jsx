@@ -11,8 +11,8 @@ export function TheoryWidget(props) {
     useEffect(() => {
         setRouter({
             "/intro": <TextWrapper
-                header="Разработка мобильных приложений на JavaScript: Основные фреймворки"
-                body="В этой презентации мы исследуем ключевые аспекты разработки мобильных приложений с использованием JavaScript. Основное внимание уделяется трем популярным фреймворкам: React Native, NativeScript и Ionic. Мы рассмотрим их особенности, преимущества и сценарии использования, чтобы вы могли выбрать наиболее подходящий инструмент для вашего проекта."
+                header="Автор"
+                body="Яманко Дмитрий Иванович. ИТМО. 2023"
                 done={() => {
                     props.setScore(doneTheory("1"));
                     setOpenedPage(`/react-native`);
@@ -63,7 +63,7 @@ export function TheoryWidget(props) {
 
     return (
         <div>
-            <button onClick={() => setOpenedPage("/intro")}>Введение</button>
+            <button onClick={() => setOpenedPage("/intro")}>Об авторе</button>
             {props.score > 0 ? <button onClick={() => setOpenedPage("/react-native")}>React Native</button> : null}
             {props.score > 1 ? <button onClick={() => setOpenedPage("/nativescript")}>NativeScript</button> : null}
             {props.score > 3 ? <button onClick={() => setOpenedPage("/ionic")}>Ionic</button> : null}
